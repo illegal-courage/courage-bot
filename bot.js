@@ -45,4 +45,4 @@ bot.on('messageReactionAdd', (msgReact, user) => {
   bot_user.sendMessage
 });
 
-bot.login('NjI2ODA1Mzg3OTQwODU1ODIy.XZDkmQ.5pIjzE2eTr44JAuON8SQ81JxA0M');
+bot.login(process.env.BOT_TOKEN);
