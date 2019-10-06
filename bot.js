@@ -41,7 +41,6 @@ bot.on('message', msg => {
 });
 
 bot.on('messageReactionAdd', (msgReact, user) => {
-  bot_user.sendMessage
 });
 
 bot.login(process.env.BOT_TOKEN);
