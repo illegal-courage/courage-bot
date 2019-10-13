@@ -68,7 +68,7 @@ bot.on('message', msg => {
 
 bot.on('guildMemberAdd', member => {
 
-  member.guild.channels.get('630797184358416424').send({ embed: {
+  member.guild.channels.get('527494134274195466').send({ embed: {
       color: 4832585,
       author: {
         name: member.user.username,
@@ -81,7 +81,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('guildMemberRemove', member => {
-  member.guild.channels.get('630797184358416424').send({ embed: {
+  member.guild.channels.get('527494134274195466').send({ embed: {
     color: 12320768,
     author: {
       name: member.user.username,
