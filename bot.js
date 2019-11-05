@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-let hook = new Discord.WebhookClient('631491548948987924', 'rG5cFFR5NOGBhBRVwNe34FafBUtXFHaRpZ9CP0gJNAV9gjFWB1FaXbDwhQ2B_wL-BmeN');
 
 
 let fs = require('fs');
 
-bot.login(process.env.BOT_TOKEN);
+bot.login('NjMwNzk3NTY1NTcwNTgwNDgx.XZtiIQ.P4PRY5grlrKZBwSU_2mEq3igjm0');
 
 let prefix = "!";
 
@@ -37,38 +36,16 @@ bot.on('message', msg => {
       let amt = args[1];
 
       if (!amt) return msg.channel.send('Укажите сколько хотите удалить сообщений!');
-
-
-    }
-    case 'keygen' : {
-      if (!args[1]) return msg.channel.send('Ключ не найден!');
-
-      msg.delete();
-
-      let authorMsg = msg.author.username;
-      
-      hook.send(``, {
-        embeds : [{
-          title: "АКЦИЯ",
-          color: 16744703,
-          description: `:gift: Ключ на сегодня: ${args[1]}\n:pushpin: Чтобы активировать ключ, напишите на сервере в чате **!key <ключ>**`,
-          timestamp: new Date(),
-
-          footer: {
-            text: `${authorMsg}`,
-          }
-
-        }]
-      })
-
-    }   
+    } 
   }
 
 });
 
 bot.on('guildMemberAdd', member => {
 
-  member.guild.channels.get('527494134274195466').send({ embed: {
+  member.addRole("Unturned");
+
+  member.guild.channels.get('630797184358416424').send({ embed: {
       color: 4832585,
       author: {
         name: member.user.username,
@@ -81,7 +58,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('guildMemberRemove', member => {
-  member.guild.channels.get('527494134274195466').send({ embed: {
+  member.guild.channels.get('630797184358416424').send({ embed: {
     color: 12320768,
     author: {
       name: member.user.username,
