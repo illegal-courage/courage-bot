@@ -1,10 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-
+bot.login('NjMwNzk3NTY1NTcwNTgwNDgx.XZtiIQ.P4PRY5grlrKZBwSU_2mEq3igjm0');
 
 let fs = require('fs');
-
-bot.login('NjMwNzk3NTY1NTcwNTgwNDgx.XZtiIQ.P4PRY5grlrKZBwSU_2mEq3igjm0');
 
 let prefix = "!";
 
