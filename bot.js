@@ -41,7 +41,7 @@ bot.on('message', msg => {
 
 bot.on('guildMemberAdd', member => {
 
-  member.addRole("Unturned");
+  member.addRole('Unturned');
 
   member.guild.channels.get('630797184358416424').send({ embed: {
       color: 4832585,
