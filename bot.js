@@ -41,7 +41,7 @@ bot.on('message', msg => {
 
 bot.on('guildMemberAdd', member => {
 
-  member.guild.channels.get('527494134274195466').send({ embed: {
+  member.guild.channels.get('676892168174174209').send({ embed: {
       color: 4832585,
       author: {
         name: member.user.username,
@@ -54,7 +54,7 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('guildMemberRemove', member => {
-  member.guild.channels.get('527494134274195466').send({ embed: {
+  member.guild.channels.get('676892168174174209').send({ embed: {
     color: 12320768,
     author: {
       name: member.user.username,
@@ -71,7 +71,7 @@ bot.on('messageUpdate', (oldmsg, newmsg) => {
 
   let authorMsg = oldmsg.author;
 
-  bot.channels.get('632219030211788820').send({embed: {
+  bot.channels.get('676892168174174209').send({embed: {
     
     color: 16751616,
     author: {
@@ -109,7 +109,7 @@ bot.on('messageDelete', (msg) => {
 
   let authorMsg = msg.author;
   
-  bot.channels.get('632219030211788820').send({embed: {
+  bot.channels.get('676892168174174209').send({embed: {
     
     color: 16751616,
     author: {
